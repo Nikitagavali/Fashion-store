@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: green;
+    background: white;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 7%;
+    background: red;
+    border-bottom: 1px solid white;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: pink;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+nav a {
+    text-decoration: none;
+    color: grey;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: plum;
+}
+
+/* Hero */
+
+.hero {
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+    padding: 70px 8%;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(25, 20, 22, 0.78),
+            rgba(25, 20, 22, 0.12)
+        ),
+        url("https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.hero-content {
+    max-width: 560px;
+}
+
+.subtitle {
+    color: gold;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 16px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.hero-content > p:not(.subtitle) {
+    line-height: 1.8;
+    font-size: 17px;
+    margin-bottom: 28px;
+}
+
+.btn {
+    display: inline-block;
+    background: palevioletred;
+    color: white;
+    padding: 14px 25px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: purple;
+}
+
+/* Categories */
+
+.categories {
+    padding: 65px 7%;
+    text-align: center;
+}
+
+.categories h2,
+.products h2,
+.about h2,
+.contact h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.section-text {
+    color: gray;
+    margin-bottom: 30px;
+}
+
+.category-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.category-card {
+    min-height: 280px;
+    display: flex;
+    align-items: end;
+    padding: 30px;
+    text-align: left;
+    color: white;
+    text-decoration: none;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.men-category {
+    background-image:
+        linear-gradient(transparent, rgba(0, 0, 0, 0.8)),
+        url("https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=80");
+}
+
+.women-category {
+    background-image:
+        linear-gradient(transparent, rgba(0, 0, 0, 0.8)),
+        url("https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=80");
+}
+
+.category-card h3 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.category-card span {
+    font-size: 14px;
+}
+
+/* Products */
+
+.products {
+    padding: 65px 7%;
+    background: whitesmoke;
+    text-align: center;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+    margin-top: 35px;
+}
+
+.product-card {
+    background: white;
+    text-align: left;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.07);
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+}
+
+.product-card img {
+    display: block;
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 18px;
+}
+
+.category-label {
+    font-size: 11px;
+    color: #888888;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.product-info h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e94e77;
+    margin-bottom: 15px;
+}
+
+.product-btn {
+    display: inline-block;
+    padding: 10px 14px;
+    border: 1px solid #e94e77;
+    color: #e94e77;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+.product-btn:hover {
+    background: #e94e77;
+    color: white;}
